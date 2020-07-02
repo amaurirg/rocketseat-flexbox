@@ -1,5 +1,21 @@
 No VSCode, instale a extensão Live Server para fazer o reload automático na página
 
+
+RESET CSS
+=========
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+box-sizing: para que o elemento permaneça com seu tamanho e o padding não aumente o tamanho da width/height. Um elemento com width:300px e padding:20px permanecerá com width:300px e o padding fará com que ele tenha 260px internamente.
+Para otimizar a fonte:
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+text-rendering: renderizar a fonte com uma suavidade melhor, com menos pixel
+!important para sobrescrever qualquer outro text-rendering dos elementos em tela
+
 Primeiramente deverá ter no CSS:
   display: flex;  // para usar o flexbox, alinhando itens um ao lado do outro
   flex-direction: row; // padrão, mesma linha
@@ -26,4 +42,4 @@ Primeiramente deverá ter no CSS:
     - space-between
     - space-around
   order: 0; // posição do item, serve para especificar em que ordem será mostrado na tela
-  
+
