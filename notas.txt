@@ -1,0 +1,29 @@
+No VSCode, instale a extensão Live Server para fazer o reload automático na página
+
+Primeiramente deverá ter no CSS:
+  display: flex;  // para usar o flexbox, alinhando itens um ao lado do outro
+  flex-direction: row; // padrão, mesma linha
+  flex-direction: column; // por coluna, um abaixo do outro
+  flex-direction: row-reverse; // mesma linha porém sentido contrário (à direita)
+  flex-direction: column-reverse; // mesma coluna porém sentido contrário (de baixo para cima)
+  align-items: flex-start;  // padrão para iniciar no começo da linha ou coluna
+  align-items: flex-end;  // final da linha ou coluna
+  align-items: center;  // ao centro da linha ou coluna
+  align-items: quando usamos flex-direction: row; ajusta os itens verticalmente e no column ajusta horizontalmente
+  justify-content: quando usamos flex-direction: row; ajusta os itens horizontalmente 
+  justify-content: segue o mesmo padrão de align-items porém para colunas
+  Além desses padrões, o justify-content tem outros como:
+  space-between: coloca espaço igual para todos os itens sem margem
+  space-around: coloca espaço igual ao redor para todos os itens
+  flex-grow: 1; // indica que o item pode ser aumentado no componente pai (app)
+  flex-shrink: 1; // indica que o item pode ser diminuído no componente pai (app). Se ao invés de 1 colocar 0, será criada a barra de rolagem para que os elementos mantenham seu tamanho (width e height) sem diminuí-los
+  flex: 1 0;  // soma do flex-shrink, somente aumenta e não diminui o item
+  flex-wrap: wrap;  // se o item não couber na tela, quebrará a linha
+  flex-wrap: wrap-reverse;  // se o item não couber na tela, quebrará a linha no sentido inverso
+  align-content: center;  // alinha quando os itens estão em mais de uma linha. Pode ser usado também:
+    - flex-start
+    - flex-end
+    - space-between
+    - space-around
+  order: 0; // posição do item, serve para especificar em que ordem será mostrado na tela
+  

@@ -1,0 +1,26 @@
+#app {
+  height: 100%; /* para ocupar a tela toda */
+  margin: 0;
+  display: flex;
+}
+
+.box {
+  width: 150px;
+  height: 60px;
+  background: #F00;
+  margin: 5px;
+}
+
+.red {
+  order: 0;
+}
+
+.green {
+  background: #0F0;
+  order: 3;
+}
+
+.blue {
+  background: #00F;
+  order: 2;
+}
