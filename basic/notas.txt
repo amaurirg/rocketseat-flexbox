@@ -43,3 +43,8 @@ Primeiramente deverá ter no CSS:
     - space-around
   order: 0; // posição do item, serve para especificar em que ordem será mostrado na tela
 
+  border-radius: 50%; // deixa o avatar redondo
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);  // primeiro pixel a direita, segundo verticalmente e o terceiro é para dissipar na tela
+  ::after: antes de fechar, content: ''; é obrigatório
+  
+  
