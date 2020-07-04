@@ -26,6 +26,7 @@ Primeiramente deverá ter no CSS:
   align-items: flex-end;  // final da linha ou coluna
   align-items: center;  // ao centro da linha ou coluna
   align-items: quando usamos flex-direction: row; ajusta os itens verticalmente e no column ajusta horizontalmente
+  align-items: baseline;  // usado quando se deseja alinhar textos na mesma linha
   justify-content: quando usamos flex-direction: row; ajusta os itens horizontalmente 
   justify-content: segue o mesmo padrão de align-items porém para colunas
   Além desses padrões, o justify-content tem outros como:
@@ -34,6 +35,7 @@ Primeiramente deverá ter no CSS:
   flex-grow: 1; // indica que o item pode ser aumentado no componente pai (app)
   flex-shrink: 1; // indica que o item pode ser diminuído no componente pai (app). Se ao invés de 1 colocar 0, será criada a barra de rolagem para que os elementos mantenham seu tamanho (width e height) sem diminuí-los
   flex: 1 0;  // soma do flex-shrink, somente aumenta e não diminui o item
+  flex: 1 0 auto;  // auto: flexbases define qual tamanho padrão do elemento antes dele aumentar ou diminuir
   flex-wrap: wrap;  // se o item não couber na tela, quebrará a linha
   flex-wrap: wrap-reverse;  // se o item não couber na tela, quebrará a linha no sentido inverso
   align-content: center;  // alinha quando os itens estão em mais de uma linha. Pode ser usado também:
